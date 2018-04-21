@@ -1,0 +1,17 @@
+
+#kafka相关配置
+
+spring:
+  kafka:
+    bootstrap-servers: 111.230.13.235:9092
+    consumer:
+      group-id: default-group
+    template:
+      default-topic: test
+    listener:
+      concurrency: 1
+    producer:
+      batch-size: 100
+
+
+
